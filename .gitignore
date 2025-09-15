@@ -1,0 +1,23 @@
+# Node modules
+/node_modules/
+
+# Environnements (variables sensibles)
+.env
+.env.local
+.env.*.local
+
+# Fichiers de build Angular
+/dist/
+tmp/
+out-tsc/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE / éditeurs
+.vscode/
+.idea/
+.DS_Store
