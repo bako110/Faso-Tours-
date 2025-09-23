@@ -7,7 +7,8 @@ const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   avatar: { type: String, required: false, default: '' },  // Champ avatar (optionnel)
-  sex: { type: String, required: false, enum: ['male', 'female', 'other'] }  // Nouveau champ sexe
+  sex: { type: String, required: false, enum: ['male', 'female', 'other'] },  // Champ sexe
+  isActive: { type: Boolean, default: true } // Champ pour activer/désactiver l'utilisateur
 }, { timestamps: true });
 
 module.exports = mongoose.model('User', userSchema);
