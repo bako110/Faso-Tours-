@@ -9,6 +9,11 @@ const accommodationRoutes = require('./route/accommodationRoute');
 const userRoutes = require('./route/userRoute');
 const stateRoutes = require('./route/stateRoute');
 const artisanatRoutes = require('./route/artisanatRoute');
+const GuideRoutes = require('./route/guideRoute');
+const structureRoutes = require('./route/structureRoute');
+const mobilityRoutes = require('./route/mobilityRoute');
+const galleryRoutes = require('./route/galleryRoute');
+const reservationRoutes = require('./route/reservationRoute');
 
 const authRoutes = require('./route/auth');
 const aiRoutes = require('./route/ai');
@@ -31,7 +36,11 @@ app.use('/api/accommodations', accommodationRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/state', stateRoutes);
 app.use('/api/artisanat', artisanatRoutes);
-
+app.use('/api/guides', GuideRoutes);
+app.use('/api/structures', structureRoutes);
+app.use('/api/mobility', mobilityRoutes);
+app.use('/api/gallery', galleryRoutes);
+app.use('/api/reservations', reservationRoutes);
 
 // Exemple de route de test
 app.get('/', (req, res) => {
